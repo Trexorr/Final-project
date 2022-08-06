@@ -1,0 +1,163 @@
+html {
+    background-color: #e2d3e0;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.title{
+text-align: center;
+}
+
+/* Form */
+input {
+text-align: center;
+font-size: 18px;
+}
+.labelcon{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 10px;
+font-size: 20px;
+}
+
+input[type=text]{
+    margin-top: 0;
+    width: 30%;
+    height: 40px;
+    border:  2px solid rgb(0, 0, 0);
+    color: black;
+    border-radius: 10px;
+}
+
+.labelform p{
+    font-size: 25px;
+    margin: 0px;
+    margin-bottom: 25px;
+}
+
+.card{
+background-color: rgba(119, 118, 118, 0.37);
+border-radius: 10px;
+box-shadow: 1px 2px rgb(108, 107, 107);
+margin: 10px;
+margin-left: 30px;
+padding: 20px;
+max-width: 80%;
+align-self: center;
+height: 720px;
+}
+
+/* Invitation Sectionm */
+
+/* 943px x 780px */
+
+.invitation {
+    justify-self: center;
+    align-self: center;
+}
+
+.invitation img {
+    height: 750px;
+    margin: 0;
+    padding: 0;
+    }
+
+.blackngold {
+    display: none;
+    z-index: 500;
+}
+
+.traditional {
+    display: none;
+}
+.greennGold {
+    display: block;
+}
+
+
+
+
+
+/* Calander */
+
+.datePicker{
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+    position: relative;
+    height: 30px;
+    margin: 20px auto;
+    background-color: lightgray;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    cursor: Pointer;
+    user-select: none;
+}
+.datePicker .selectedDate {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #313131;
+    font-size: 28px;
+}
+.datePicker .dates{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0%;
+    background-color: rgb(182, 64, 64);
+}
+.datePicker .dates .month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgb(57, 80, 103);
+}
+.datePicker .dates .month .arrows {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 30px;
+}
+
+/* Actions */
+
+.datePicker:hover{
+    background-color: rgb(175, 175, 175);
+
+}
+.datePicker .dates.active {
+    display: block;
+}
+.datePicker .dates .month .arrows:hover {
+    background-color: white ;
+}
+.datePicker .dates .month .arrows:active {
+    background-color: aqua;
+}
+.datePicker .dates .days {
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+.datePicker .dates .days .day:hover {
+    background-color: aliceblue;
+}
+.datePicker .dates .days .day:active {
+    background-color: rgb(0, 0, 0);
+}
+.datePicker .dates .days .day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.datePicker .dates .days .day.selected {
+    background-color: rgb(18, 235, 10);
+}
