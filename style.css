@@ -1,7 +1,9 @@
 html {
-    background-color: #e2d3e0;
+    background-color: #c6bcb6;
 }
-
+.flex{
+    display: flex;
+}
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -9,46 +11,76 @@ html {
 }
 .title{
 text-align: center;
+color: #604c3e;
+}
+/* Form Class Changer */
+.sidenav{
+    width: 30px;
+    height: 210px;
+    z-index: 5;
+    position: absolute;
+    top: 200px;
+    left: 80px;
+}
+.sidenav img{
+    width: 90px;
+    height: 130px;
+}
+.sidenav ul{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    height: 60px;
+    list-style: none;
+}
+.sidenav li{
+    height: 100%;
+    list-style: none;
+    padding-bottom: 100px;
+}
+ul div {
+    padding-bottom: 35px;
 }
 
 /* Form */
+
+.labelcon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-size: 25px;
+    color: #221003;
+    }
 input {
 text-align: center;
 font-size: 18px;
 }
-.labelcon{
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 10px;
-font-size: 20px;
-}
-
 input[type=text]{
     margin-top: 0;
-    width: 30%;
-    height: 40px;
+    width: 40%;
+    height: 50px;
     border:  2px solid rgb(0, 0, 0);
     color: black;
     border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
 }
-
 .labelform p{
     font-size: 25px;
     margin: 0px;
     margin-bottom: 25px;
 }
-
 .card{
-background-color: rgba(119, 118, 118, 0.37);
+background-color: #96897f;
 border-radius: 10px;
 box-shadow: 1px 2px rgb(108, 107, 107);
 margin: 10px;
-margin-left: 30px;
+margin-left: 50px;
 padding: 20px;
-max-width: 80%;
+width: 70%;
 align-self: center;
 height: 720px;
+z-index: 1;
 }
 
 /* Invitation Sectionm */
@@ -56,43 +88,239 @@ height: 720px;
 /* 943px x 780px */
 
 .invitation {
+    position: relative;
     justify-self: center;
     align-self: center;
+    display: flex;
 }
 
 .invitation img {
-    height: 750px;
+    height: 790px;
     margin: 0;
     padding: 0;
+    z-index: 2;
     }
 
-.blackngold {
+.invitation p {
+    z-index: 100;
+    top: 100px;
+    position: absolute;
+}
+.traditional p {
+    font-family: 'Carattere', cursive;
+    font-size: xx-large;
+    text-align: center;
+    color: #bca149;
+}
+
+.blacknGold p {
+    font-family: 'Carattere', cursive;
+    color: white;
+    font-size: 29px;
+    text-align: center;
+}
+
+.greennGold p {
+    font-family: 'Carattere', cursive;
+    font-size: xx-large;
+    justify-items: center;
+}
+.dustyRose p {
+    font-family: 'Carattere', cursive;
+    font-size: xx-large;
+    justify-items: center;
+    color: azure;
+    text-align: center;
+}
+
+/* Traditional Styling */
+
+.traditional #out1 {
+    position: absolute;
+    top: 315px;
+    left: 70px;
+    font-size: 50px;
+}
+.traditional #out2{
+    position: absolute;
+    top: 315px;
+    left: 330px;
+    font-size: 50px;
+}
+.traditional #out3{
+    position: absolute;
+    top: 410px;
+    left: 160px;
+    font-size: 60px;
+    letter-spacing: 0.1em;
+
+}
+.traditional #dateOut{
+    position: absolute;
+    top: 550px;
+    left: 80px;
+}
+.traditional #out4{
+    position: absolute;
+    top: 600px;
+    left: 70px;
+    width: 400px;
+    font-size: xx-large;
+}
+.traditional #out5{
+    position: absolute;
+    top: 550px;
+    left: 340px;
+}
+
+/* Black Gold */
+
+.blacknGold #out1 {
+    position: absolute;
+    top: 230px;
+    left: 195px;
+    font-size: 33px;
+    letter-spacing: 0.1em;
+    font-family: 'Fredericka the Great', cursive;
+}
+.blacknGold #out2{
+    position: absolute;
+    top: 370px;
+    left: 195px;
+    font-size: 33px;
+    letter-spacing: 0.1em;
+    font-family: 'Fredericka the Great', cursive;
+}
+.blacknGold #out3{
+    position: absolute;
+    top: 400px;
+    left: 150px;
+    font-size: 50px;
+    letter-spacing: 7px;
     display: none;
-    z-index: 500;
+
+}
+.blacknGold #dateOut{
+    position: absolute;
+    top: 450px;
+    left: 99px;
+}
+.blacknGold #out4{
+    position: absolute;
+    top: 505px;
+    left:102px;
+    width: 300px;
+}
+.blacknGold #out5{
+    position: absolute;
+    top: 450px;
+    left: 320px;
 }
 
-.traditional {
-    display: none;
+/* GreenGold Styling */
+
+.greennGold #out1 {
+    position: absolute;
+    top: 220px;
+    left: 260px;
 }
-.greennGold {
-    display: block;
+.greennGold #out2{
+    position: absolute;
+    top: 310px;
+    left: 360px;
+}
+.greennGold #out3{
+    position: absolute;
+    top: 350px;
+    left: 280px;
+    font-size: 50px;
+    letter-spacing: 5px;
+
+}
+.greennGold #dateOut{
+    position: absolute;
+    top: 460px;
+    left: 280px;
+}
+.greennGold #out4{
+    position: absolute;
+    top: 520px;
+    left: 270px;
+}
+.greennGold #out5{
+    position: absolute;
+    top: 630px ;
+    left: 350px;
 }
 
+/* Dusty Rose */
 
+.dustyRose #out1 {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    font-size: 40px;
+    letter-spacing: 0.1em;
+    
+}
+.dustyRose #out2{
+    position: absolute;
+    top: 210px;
+    left: 200px;
+    font-size: 40px;
+    letter-spacing: 0.1em;
+    
+}
+.dustyRose #out3{
+    position: absolute;
+    top: 260px;
+    left: 140px;
+    font-size: 75px;
+    letter-spacing: 0.1em;
 
+}
+.dustyRose #dateOut{
+    position: absolute;
+    top: 590px;
+    left: 99px;
+}
+.dustyRose #out4{
+    position: absolute;
+    top: 480px;
+    left: 70px;
+    width: 380px;
+}
+.dustyRose #out5{
+    position: absolute;
+    top: 590px;
+    left: 320px;
+}
 
+.style1 {
+    cursor: pointer;
+    padding-top: 15px;
+}
+.style2 {
+    cursor: pointer;
+}
+.style3 {
+    cursor: pointer;
+}
+.style4 {
+    cursor: pointer;
+}
 
 /* Calander */
 
 .datePicker{
     justify-content: center;
     text-align: center;
-    width: 30%;
+    width: 35%;
     position: relative;
     height: 30px;
     margin: 20px auto;
     background-color: lightgray;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
     cursor: Pointer;
     user-select: none;
 }
@@ -100,7 +328,7 @@ height: 720px;
     width: 100%;
     justify-content: center;
     align-items: center;
-    color: #313131;
+    color: #989292;
     font-size: 28px;
 }
 .datePicker .dates{
@@ -109,13 +337,13 @@ height: 720px;
     top: 100%;
     left: 0;
     right: 0%;
-    background-color: rgb(182, 64, 64);
+    background-color: #c0a6a9;
 }
 .datePicker .dates .month {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid rgb(57, 80, 103);
+    /* border-bottom: 1px solid rgb(0, 0, 0); */
 }
 .datePicker .dates .month .arrows {
     width: 35px;
@@ -129,35 +357,52 @@ height: 720px;
 
 /* Actions */
 
+.style1:hover {
+   transform: scale(1.2);
+}
+.style2:hover {
+    transform: scale(1.2);
+}
+.style3:hover {
+    transform: scale(1.2);
+}
+.style4:hover {
+    transform: scale(1.2);
+}
 .datePicker:hover{
-    background-color: rgb(175, 175, 175);
+    background-color: rgb(213, 213, 213);
 
 }
 .datePicker .dates.active {
     display: block;
 }
 .datePicker .dates .month .arrows:hover {
-    background-color: white ;
+    background-color: #af9598;
 }
 .datePicker .dates .month .arrows:active {
-    background-color: aqua;
+    background-color: #917477;
 }
 .datePicker .dates .days {
     height: 200px;
     display: grid;
     grid-template-columns: repeat(7,1fr);
+    color: #a1757b;
+    border: 2px solid #221003;
 }
 .datePicker .dates .days .day:hover {
-    background-color: aliceblue;
+    background-color: #af9598;
 }
 .datePicker .dates .days .day:active {
-    background-color: rgb(0, 0, 0);
+    background-color: #917477;
 }
 .datePicker .dates .days .day {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid #e8e1dc */
 }
-.datePicker .dates .days .day.selected {
+
+/* Highlight selected date not working */
+/* .datePicker .dates .days .day.selected {
     background-color: rgb(18, 235, 10);
-}
+} */

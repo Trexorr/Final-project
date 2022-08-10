@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding Invitation</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Fredericka+the+Great&display=swap" rel="stylesheet">
     
 </head>
 <body>
@@ -15,26 +21,37 @@
             <h3>We'd like to congratulate you on your big ocassion and endevour to provide you the right tools to create the perfect invitation that will bring all your friends and loved ones together</h3>
         </div>
     </header>
+
     <main class="grid">
-        <section class="labelform card">
+        
+        <section class = "flex">
+            <div class="sidenav">
+                <ul>
+                    <div class="style1" ><img src="Invitations/Traditional.jpeg" alt="Taditional Style Change"></div>
+                    <div class="style2"><img src="Invitations/BlacknGold.jpeg" alt="Black and Gold Style Change"></div>
+                    <div class="style3"><img src="Invitations/GreennGold.jpeg" alt="Emerald and Gold Style Change"></div>
+                    <div class="style4"><img src="Invitations/DustyRose.jpeg" alt="Dusty Rose Style Change"></div>
+                </ul>
+            </div>
+        <div class="labelform card">
             <p class="labelcon">Enter your wedding details here:</p>
             <form>
                 <div class="labelcon">
                     <label for="firstName">First Lovebird:</label>
-                    <input type="text" name="firstName" placeholder="John">
+                    <input type="text" id="in1" name="firstName" placeholder="John">
                 </div>
                 <div class="labelcon">
                     <label for="secondName">Second Lovebird:</label>
-                    <input type="text"   name="secondName" placeholder="Jane" >
+                    <input type="text" id="in2"  name="secondName" placeholder="Jane" >
                  </div>
                  <div class="labelcon">
                     <label for="firstName">Your new joint name:</label>
-                    <input type="text" name="familyName" placeholder="Smith">
+                    <input type="text" id="in3" name="familyName" placeholder="Smith">
                 </div>
 
                 <div class="labelcon">
                     <label for="firstName">Where's the shindig?</label>
-                    <input type="text" name="location" placeholder="Name of venue"></form>
+                    <input type="text" id="in4" name="location" placeholder="Name of venue"></form>
                 </div>
 
                 <div class="datePicker labelcon">
@@ -53,23 +70,24 @@
                 </div>
                 <div class="labelcon">
                     <label for="firstName">What time?</label>
-                    <input type="text" name="eventTime" placeholder="Example 19:00"></form>
+                    <input type="text" id="in5" name="eventTime" placeholder="Example 19:00"></form>
                 </div>
             </form>
-        </section>
-
+        </div>
+        </section> 
 
         <section class="invitation">
-        
-            <div class="blackngold">
-                <img src="Invitations/BlacknGold.jpeg">
-            </div>
 
-            <div class="traditional">
+            <div id="invCard" class = "traditional">
+                <div class="position">
+                    <p id = "out1"></p>
+                    <p id = "out2"></p>
+                    <p id = "out3"></p>
+                    <p id = "out4"></p>
+                    <p id = "dateOut"></p>
+                    <p id = "out5"></p>
+                </div>
                 <img src="Invitations/Traditional.jpeg">
-            </div>
-            <div class="greennGold">
-                <img src="Invitations/GreennGold.jpeg" alt="">
             </div>
 
         </section>
